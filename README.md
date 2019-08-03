@@ -1,13 +1,14 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
-
 Steps to run project:
-### `Note!: You must have Node > 8.1`
+### `Note: You must have Node > 8.1`
 
-### `First: In project root run: npm install or yarn install`
 
-### `Second: Run npm start or yarn start`
+### `First.`
+In project root run: npm install or yarn install
+
+### `Second.`
+In project run npm start or yarn start
 
 
 
