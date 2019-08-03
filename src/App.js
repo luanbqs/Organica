@@ -1,25 +1,32 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
+import { BrowserRouter, Switch, Route } from 'react-router-dom'
+import Home from './pages/Home'
+import OurHistory from './pages/OurHistory'
+import Blog from './pages/Blog'
+import Partners from './pages/Partners'
+import Products from './pages/Products'
+import Market from './pages/Market'
+import Contacts from './pages/Contacts'
+
+
+// import SingUp from './pages/Cadastro'
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <BrowserRouter>
+      <Switch>
+        <Route path="/" exact={true} component={Home} />
+        <Route path="/OurHistory" component={OurHistory} />
+        <Route path="/Blog" component={Blog} />
+        <Route path="/Partners" component={Partners} />
+        <Route path="/Contacts" component={Contacts} />
+        <Route path="/Market" component={Market} />
+        <Route path="/Products" component={Products} />
+        {/* <Route path="/SingUp" component={SingUp} /> */}
+
+      </Switch>
+    </BrowserRouter>
   );
 }
 

@@ -2,6 +2,163 @@
   text-align: center;
 }
 
+.homeBackground {
+  text-align: center;
+  background-color: #d7f0b9;
+  background-image: url(./elementos/imagem-fundo.jpg);
+  background-repeat: no-repeat;
+  min-height: 100vh;
+  width: 100vw;
+  background-size: 100vw;
+  display: flex;
+  overflow: 'hidden'
+}
+
+.logoWrapper{
+  width: 43vh;
+  height: 25vh;
+  margin-left: 10vh;
+  background-color: coral;
+  background-image: linear-gradient(#f79736, #c86e2a);
+  border-bottom: 3px;
+  border-radius: 0px 0px 20px 20px;
+  padding-top: 20px;
+}
+
+
+#clientArea{
+  color: #95ec49;
+  margin: 25px;
+}
+
+@font-face {
+  font-family: 'Amatic Bold';
+  font-style: normal;
+  font-weight: 400;
+  src: url('./Fontes/amatic-bold.ttf'); /* IE9 Compat Modes */
+  src: local('Amatic Bold'), local('AmaticBold'),
+  
+}
+
+.btn {
+  border: none;
+  background-color: inherit;
+  padding: 14px 23px;
+  font-size: 16px;
+  cursor: pointer;
+  display: inline-block;
+}
+
+.description{
+  font-family: 'Amatic Bold' ;
+  margin-left: 70px;
+  margin-top: 170px;
+  width: 18vw;
+  font-size: 70px;
+  color:#b5c8b6
+}
+
+#loginWrapper{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 43vh;
+  height: 49vh;
+  margin-left: 10vh;
+  margin-top: 22vh;
+  background-color: #899836;
+  border-bottom: 3px;
+  border-radius: 20px;
+  padding-top: 20px;
+}
+
+.login-input {
+  height: 1.4em;
+  width: 13em;
+  border-radius: 10px;
+  transition: border 0.4s ease-out;
+  padding: 13px;
+  margin:10px;
+  font-family: Oxygen, sans-serif;
+  font-size: 19px;
+  color: #292929;
+
+}
+
+::-webkit-input-placeholder {
+  text-align: center;
+}
+
+:-moz-placeholder { /* Firefox 18- */
+  text-align: center;  
+}
+
+::-moz-placeholder {  /* Firefox 19+ */
+  text-align: center;  
+}
+
+:-ms-input-placeholder {  
+  text-align: center; 
+}
+
+#userIcon{
+  width: 70px;
+  height: 70px;
+  margin-top:-120px;
+  margin-left:38%;
+  /* background: #3f5117; */
+  background-image: linear-gradient(#748151, #3f5117);
+  -moz-border-radius: 50px;
+  -webkit-border-radius: 50px;
+  border-radius: 50px;
+}
+
+#organicTag{
+  width: 150px;
+  height: 70px;
+  margin-left: 80vw;
+  margin-top: -120;
+}
+
+.organicLogo{
+  width: 100%;
+  height: 100%;
+  margin: 20px;
+  background-image: url(./elementos/logo-organica.png);
+}
+
+.loginButton{
+  margin: 5px;
+  height: 49px;
+  width: 276px;
+  border-radius: 10px;
+  background-color:#98e446
+}
+
+.navBar {
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+  background-image: url(./elementos/textura-madeira.jpg);
+  height: 13vh;
+  width: 100vw;
+  background-color: #282c34;
+  background-size: 'cover';
+  overflow: 'hidden'
+  /* backgroundSize: 'cover',
+  overflow: 'hidden', */
+}
+.navOptions{
+  display: flex;
+  flex-direction: row;
+  margin-left: 12px;
+}
+h3{
+  color: white;
+  width:100%;
+  margin: 10px;
+}
+
 .App-logo {
   animation: App-logo-spin infinite 20s linear;
   height: 40vmin;
@@ -23,11 +180,3 @@
   color: #61dafb;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
